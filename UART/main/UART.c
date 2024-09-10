@@ -16,7 +16,6 @@
 #define BUF_SIZE (1024)
 
 
-//an example of echo test with hardware flow control on UART1
 static void echo_task()
 {
     const int uart_num0 = UART_NUM_0;
@@ -38,15 +37,14 @@ static void echo_task()
         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,    //UART_HW_FLOWCTRL_CTS_RTS,
         .rx_flow_ctrl_thresh = 122,
     };
-    //Configure UART1 parameters
+    //Configure UART1
     uart_param_config(uart_num0, &uart_config0);
     uart_param_config(uart_num1, &uart_config1);
 
     uart_set_pin(uart_num0, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
     uart_set_pin(uart_num1, ECHO_TEST_TXD, ECHO_TEST_RXD, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
     
-    //Install UART driver (we don't need an event queue here)
-    //In this example we don't even use a buffer for sending data.
+    // Setup UART driver
     uart_driver_install(uart_num0, BUF_SIZE * 2, 0, 0, NULL, 0);
     uart_driver_install(uart_num1, BUF_SIZE * 2, 0, 0, NULL, 0);
 
@@ -62,6 +60,6 @@ static void echo_task()
 
 void app_main()
 {
-    //A uart read/write example without event queue;
+    //A uart read/write
     xTaskCreate(echo_task, "uart_echo_task", 1024, NULL, 10, NULL);
 }
