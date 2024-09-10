@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 510910d2e870d7d4a705df55c5fd3ed577ba3eaf Nguyen Manh Hung <manhhunga1k45@gmail.com> 1725965350 +0700	commit (initial): Add UART example
+510910d2e870d7d4a705df55c5fd3ed577ba3eaf 82d770adb1bf2264342eebe3b8f1428e7952254b Nguyen Manh Hung <manhhunga1k45@gmail.com> 1725965451 +0700	commit: Add GPIO_interrupt example
