@@ -1,0 +1,117 @@
+-- IDF_TARGET is not set, guessed 'esp32' from sdkconfig 'E:/ESP_idf/Example/SPI/sdkconfig'
+-- Found Git: E:/ESP_idf/Espressif/tools/idf-git/2.44.0/cmd/git.exe (found version "2.44.0.windows.1") 
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at 'E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1'
+'E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1' is owned by:
+	BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+	LAPTOP-04Q8E989/ADMIN (S-1-5-21-2597666498-3200441734-1014453359-1001)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1'
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: E:/ESP_idf/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: E:/ESP_idf/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: E:/ESP_idf/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file E:/ESP_idf/Example/SPI/sdkconfig
+E:/ESP_idf/Example/SPI/sdkconfig:22 CONFIG_APP_BUILD_TYPE_ELF_RAM was replaced with CONFIG_APP_BUILD_TYPE_RAM 
+E:/ESP_idf/Example/SPI/sdkconfig:134 CONFIG_COMPILER_OPTIMIZATION_DEFAULT was replaced with CONFIG_COMPILER_OPTIMIZATION_DEBUG 
+E:/ESP_idf/Example/SPI/sdkconfig:202 CONFIG_MCPWM_ISR_IN_IRAM was replaced with CONFIG_MCPWM_ISR_IRAM_SAFE 
+E:/ESP_idf/Example/SPI/sdkconfig:281 CONFIG_ESP32_DEFAULT_CPU_FREQ_80 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_80 
+E:/ESP_idf/Example/SPI/sdkconfig:282 CONFIG_ESP32_DEFAULT_CPU_FREQ_160 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_160 
+E:/ESP_idf/Example/SPI/sdkconfig:283 CONFIG_ESP32_DEFAULT_CPU_FREQ_240 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240 
+E:/ESP_idf/Example/SPI/sdkconfig:284 CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ 
+E:/ESP_idf/Example/SPI/sdkconfig:285 CONFIG_ESP32_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM 
+E:/ESP_idf/Example/SPI/sdkconfig:288 CONFIG_ESP32_ULP_COPROC_ENABLED was replaced with CONFIG_ULP_COPROC_ENABLED 
+E:/ESP_idf/Example/SPI/sdkconfig:289 CONFIG_ESP32_ULP_COPROC_RESERVE_MEM was replaced with CONFIG_ULP_COPROC_RESERVE_MEM 
+E:/ESP_idf/Example/SPI/sdkconfig:290 CONFIG_ESP32_DEBUG_OCDAWARE was replaced with CONFIG_ESP_DEBUG_OCDAWARE 
+E:/ESP_idf/Example/SPI/sdkconfig:291 CONFIG_ESP32_BROWNOUT_DET was replaced with CONFIG_ESP_BROWNOUT_DET 
+E:/ESP_idf/Example/SPI/sdkconfig:292 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_0 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_0 
+E:/ESP_idf/Example/SPI/sdkconfig:293 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_1 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_1 
+E:/ESP_idf/Example/SPI/sdkconfig:294 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_2 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_2 
+E:/ESP_idf/Example/SPI/sdkconfig:295 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_3 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_3 
+E:/ESP_idf/Example/SPI/sdkconfig:296 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_4 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_4 
+E:/ESP_idf/Example/SPI/sdkconfig:297 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_5 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_5 
+E:/ESP_idf/Example/SPI/sdkconfig:298 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_6 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_6 
+E:/ESP_idf/Example/SPI/sdkconfig:299 CONFIG_ESP32_BROWNOUT_DET_LVL_SEL_7 was replaced with CONFIG_ESP_BROWNOUT_DET_LVL_SEL_7 
+E:/ESP_idf/Example/SPI/sdkconfig:300 CONFIG_ESP32_BROWNOUT_DET_LVL was replaced with CONFIG_ESP_BROWNOUT_DET_LVL 
+E:/ESP_idf/Example/SPI/sdkconfig:301 CONFIG_ESP32_TIME_SYSCALL_USE_RTC_FRC1 was replaced with CONFIG_NEWLIB_TIME_SYSCALL_USE_RTC_HRT 
+E:/ESP_idf/Example/SPI/sdkconfig:302 CONFIG_ESP32_TIME_SYSCALL_USE_RTC was replaced with CONFIG_NEWLIB_TIME_SYSCALL_USE_RTC 
+E:/ESP_idf/Example/SPI/sdkconfig:303 CONFIG_ESP32_TIME_SYSCALL_USE_FRC1 was replaced with CONFIG_NEWLIB_TIME_SYSCALL_USE_HRT 
+E:/ESP_idf/Example/SPI/sdkconfig:304 CONFIG_ESP32_TIME_SYSCALL_USE_NONE was replaced with CONFIG_NEWLIB_TIME_SYSCALL_USE_NONE 
+E:/ESP_idf/Example/SPI/sdkconfig:305 CONFIG_ESP32_RTC_CLK_SRC_INT_RC was replaced with CONFIG_RTC_CLK_SRC_INT_RC 
+E:/ESP_idf/Example/SPI/sdkconfig:306 CONFIG_ESP32_RTC_CLK_SRC_EXT_CRYS was replaced with CONFIG_RTC_CLK_SRC_EXT_CRYS 
+E:/ESP_idf/Example/SPI/sdkconfig:307 CONFIG_ESP32_RTC_CLK_SRC_EXT_OSC was replaced with CONFIG_RTC_CLK_SRC_EXT_OSC 
+E:/ESP_idf/Example/SPI/sdkconfig:308 CONFIG_ESP32_RTC_CLK_SRC_INT_8MD256 was replaced with CONFIG_RTC_CLK_SRC_INT_8MD256 
+E:/ESP_idf/Example/SPI/sdkconfig:309 CONFIG_ESP32_RTC_CLK_CAL_CYCLES was replaced with CONFIG_RTC_CLK_CAL_CYCLES 
+E:/ESP_idf/Example/SPI/sdkconfig:310 CONFIG_ESP32_DEEP_SLEEP_WAKEUP_DELAY was replaced with CONFIG_ESP_SLEEP_WAIT_FLASH_READY_EXTRA_DELAY 
+E:/ESP_idf/Example/SPI/sdkconfig:311 CONFIG_ESP32_XTAL_FREQ_40 was replaced with CONFIG_XTAL_FREQ_40 
+E:/ESP_idf/Example/SPI/sdkconfig:312 CONFIG_ESP32_XTAL_FREQ_26 was replaced with CONFIG_XTAL_FREQ_26 
+E:/ESP_idf/Example/SPI/sdkconfig:313 CONFIG_ESP32_XTAL_FREQ_AUTO was replaced with CONFIG_XTAL_FREQ_AUTO 
+E:/ESP_idf/Example/SPI/sdkconfig:314 CONFIG_ESP32_XTAL_FREQ was replaced with CONFIG_XTAL_FREQ 
+E:/ESP_idf/Example/SPI/sdkconfig:316 CONFIG_ESP32_NO_BLOBS was replaced with CONFIG_APP_NO_BLOBS 
+E:/ESP_idf/Example/SPI/sdkconfig:317 CONFIG_ESP32_COMPATIBLE_PRE_V2_1_BOOTLOADERS was replaced with CONFIG_APP_COMPATIBLE_PRE_V2_1_BOOTLOADERS 
+E:/ESP_idf/Example/SPI/sdkconfig:318 CONFIG_ESP32_COMPATIBLE_PRE_V3_1_BOOTLOADERS was replaced with CONFIG_APP_COMPATIBLE_PRE_V3_1_BOOTLOADERS 
+E:/ESP_idf/Example/SPI/sdkconfig:391 CONFIG_OTA_ALLOW_HTTP was replaced with CONFIG_ESP_HTTPS_OTA_ALLOW_HTTP 
+E:/ESP_idf/Example/SPI/sdkconfig:507 CONFIG_ESP_TASK_WDT was replaced with CONFIG_ESP_TASK_WDT_INIT 
+E:/ESP_idf/Example/SPI/sdkconfig:534 CONFIG_ESP32_WIFI_ENABLED was replaced with CONFIG_ESP_WIFI_ENABLED 
+E:/ESP_idf/Example/SPI/sdkconfig:535 CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM was replaced with CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM 
+E:/ESP_idf/Example/SPI/sdkconfig:536 CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM was replaced with CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM 
+E:/ESP_idf/Example/SPI/sdkconfig:537 CONFIG_ESP32_WIFI_STATIC_TX_BUFFER was replaced with CONFIG_ESP_WIFI_STATIC_TX_BUFFER 
+E:/ESP_idf/Example/SPI/sdkconfig:538 CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER was replaced with CONFIG_ESP_WIFI_DYNAMIC_TX_BUFFER 
+E:/ESP_idf/Example/SPI/sdkconfig:539 CONFIG_ESP32_WIFI_TX_BUFFER_TYPE was replaced with CONFIG_ESP_WIFI_TX_BUFFER_TYPE 
+E:/ESP_idf/Example/SPI/sdkconfig:540 CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER_NUM was replaced with CONFIG_ESP_WIFI_DYNAMIC_TX_BUFFER_NUM 
+E:/ESP_idf/Example/SPI/sdkconfig:541 CONFIG_ESP32_WIFI_CSI_ENABLED was replaced with CONFIG_ESP_WIFI_CSI_ENABLED 
+E:/ESP_idf/Example/SPI/sdkconfig:542 CONFIG_ESP32_WIFI_AMPDU_TX_ENABLED was replaced with CONFIG_ESP_WIFI_AMPDU_TX_ENABLED 
+E:/ESP_idf/Example/SPI/sdkconfig:543 CONFIG_ESP32_WIFI_TX_BA_WIN was replaced with CONFIG_ESP_WIFI_TX_BA_WIN 
+E:/ESP_idf/Example/SPI/sdkconfig:544 CONFIG_ESP32_WIFI_AMPDU_RX_ENABLED was replaced with CONFIG_ESP_WIFI_AMPDU_RX_ENABLED 
+E:/ESP_idf/Example/SPI/sdkconfig:545 CONFIG_ESP32_WIFI_RX_BA_WIN was replaced with CONFIG_ESP_WIFI_RX_BA_WIN 
+E:/ESP_idf/Example/SPI/sdkconfig:546 CONFIG_ESP32_WIFI_NVS_ENABLED was replaced with CONFIG_ESP_WIFI_NVS_ENABLED 
+E:/ESP_idf/Example/SPI/sdkconfig:547 CONFIG_ESP32_WIFI_TASK_PINNED_TO_CORE_0 was replaced with CONFIG_ESP_WIFI_TASK_PINNED_TO_CORE_0 
+E:/ESP_idf/Example/SPI/sdkconfig:548 CONFIG_ESP32_WIFI_TASK_PINNED_TO_CORE_1 was replaced with CONFIG_ESP_WIFI_TASK_PINNED_TO_CORE_1 
+E:/ESP_idf/Example/SPI/sdkconfig:549 CONFIG_ESP32_WIFI_SOFTAP_BEACON_MAX_LEN was replaced with CONFIG_ESP_WIFI_SOFTAP_BEACON_MAX_LEN 
+E:/ESP_idf/Example/SPI/sdkconfig:550 CONFIG_ESP32_WIFI_MGMT_SBUF_NUM was replaced with CONFIG_ESP_WIFI_MGMT_SBUF_NUM 
+E:/ESP_idf/Example/SPI/sdkconfig:551 CONFIG_ESP32_WIFI_IRAM_OPT was replaced with CONFIG_ESP_WIFI_IRAM_OPT 
+E:/ESP_idf/Example/SPI/sdkconfig:552 CONFIG_ESP32_WIFI_RX_IRAM_OPT was replaced with CONFIG_ESP_WIFI_RX_IRAM_OPT 
+E:/ESP_idf/Example/SPI/sdkconfig:553 CONFIG_ESP32_WIFI_ENABLE_WPA3_SAE was replaced with CONFIG_ESP_WIFI_ENABLE_WPA3_SAE 
+E:/ESP_idf/Example/SPI/sdkconfig:685 CONFIG_HAL_ASSERTION_SILIENT was replaced with CONFIG_HAL_ASSERTION_SILENT 
+E:/ESP_idf/Example/SPI/sdkconfig:1210 CONFIG_WPA_MBEDTLS_CRYPTO was replaced with CONFIG_ESP_WIFI_MBEDTLS_CRYPTO 
+E:/ESP_idf/Example/SPI/sdkconfig:1211 CONFIG_WPA_WAPI_PSK was replaced with CONFIG_ESP_WIFI_WAPI_PSK 
+E:/ESP_idf/Example/SPI/sdkconfig:1212 CONFIG_WPA_SUITE_B_192 was replaced with CONFIG_ESP_WIFI_SUITE_B_192 
+E:/ESP_idf/Example/SPI/sdkconfig:1213 CONFIG_WPA_DEBUG_PRINT was replaced with CONFIG_ESP_WIFI_DEBUG_PRINT 
+E:/ESP_idf/Example/SPI/sdkconfig:1214 CONFIG_WPA_TESTING_OPTIONS was replaced with CONFIG_ESP_WIFI_TESTING_OPTIONS 
+E:/ESP_idf/Example/SPI/sdkconfig:1215 CONFIG_WPA_WPS_STRICT was replaced with CONFIG_ESP_WIFI_WPS_STRICT 
+E:/ESP_idf/Example/SPI/sdkconfig:1216 CONFIG_WPA_11KV_SUPPORT was replaced with CONFIG_ESP_WIFI_11KV_SUPPORT 
+-- Compiler supported targets: xtensa-esp-elf
+-- Found Python3: E:/ESP_idf/Espressif/python_env/idf5.3_py3.11_env/Scripts/python.exe (found version "3.11.2") found components: Interpreter 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "03_spi" version: d069ea8-dirty
+-- Adding linker script E:/ESP_idf/Example/SPI/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script E:/ESP_idf/Example/SPI/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/app_trace E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/app_update E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/bootloader E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/bootloader_support E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/bt E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/cmock E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/console E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/cxx E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/driver E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/efuse E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp-tls E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_app_format E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_bootloader_format E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_coex E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_common E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_ana_cmpr E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_cam E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_dac E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gpio E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_gptimer E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_i2c E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_i2s E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_isp E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_jpeg E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_ledc E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_mcpwm E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_parlio E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_pcnt E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_ppa E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_rmt E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdio E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdm E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdmmc E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_sdspi E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_spi E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_touch_sens E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_tsens E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_usb_serial_jtag E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_eth E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_event E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_gdbstub E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hid E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_client E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_http_server E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_https_ota E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_https_server E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_lcd E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_local_ctrl E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_mm E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_netif E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_netif_stack E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_partition E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_phy E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_pm E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_psram E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_ringbuf E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_rom E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_timer E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_vfs_console E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/espcoredump E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/esptool_py E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/fatfs E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/freertos E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/hal E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/heap E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/http_parser E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/idf_test E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/ieee802154 E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/json E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/log E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/lwip E:/ESP_idf/Example/SPI/main E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/mbedtls E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/mqtt E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/newlib E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/nvs_flash E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/nvs_sec_provider E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/openthread E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/perfmon E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/protobuf-c E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/protocomm E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/pthread E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/sdmmc E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/soc E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/spi_flash E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/spiffs E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/tcp_transport E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/ulp E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/unity E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/usb E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/vfs E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/wear_levelling E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/wifi_provisioning E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/wpa_supplicant E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/ESP_idf/Example/SPI/build
