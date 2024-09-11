@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "I2C_SSD1306",
-    "project_version":    "f09e220-dirty",
+    "project_version":    "ec43043-dirty",
     "project_path":       "E:/ESP_idf/Example/I2C_SSD1306",
     "idf_path":           "E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "E:/ESP_idf/Example/I2C_SSD1306/build",

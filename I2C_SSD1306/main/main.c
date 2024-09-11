@@ -105,9 +105,8 @@
 // Cấu hình UART
 #define UART_NUM            UART_NUM_1
 #define BUF_SIZE            1024
-#define TXD_PIN             (GPIO_NUM_17)
-#define RXD_PIN             (GPIO_NUM_16)
-
+#define TXD_PIN             (GPIO_NUM_35)
+#define RXD_PIN             (GPIO_NUM_34)
 // Cấu hình nút
 #define BUTTON_PIN          GPIO_NUM_0  // Nút nhấn được gán vào GPIO 0
 #define BUTTON_ACTIVE_LEVEL 0           // Mức logic khi nút được nhấn
@@ -147,13 +146,6 @@ void init_button() {
     gpio_isr_handler_add(BUTTON_PIN, button_isr_handler, NULL);
 }
 
-void uint8_to_text(uint8_t *data, int len, char *text) {
-    for (int i = 0; i < len; i++) {
-        sprintf(&text[i * 2], "%02X", data[i]);  // Chuyển đổi từng byte sang chuỗi hex
-    }
-    text[len * 2] = '\0';  // Kết thúc chuỗi
-}
-
 void app_main() {
     // Cấu hình UART
     init_uart();
@@ -165,7 +157,7 @@ void app_main() {
     I2C_SSD1306_t* ssd1306 = I2C_SSD1306_init(i2c_master, 0x3C, 128, 64, SSD1306_BOTTOMTOTOP);
 
     uint8_t data[BUF_SIZE];
-    char text[BUF_SIZE * 2];
+
 
     while (1) {
         if (paused) {
@@ -178,10 +170,10 @@ void app_main() {
             int len = uart_read_bytes(UART_NUM, data, BUF_SIZE - 1, pdMS_TO_TICKS(1000));
             if (len > 0) {
                 data[len] = '\0';  // Kết thúc chuỗi nhận được
-                uint8_to_text(data, len, text);
+
                 // In dữ liệu ra màn hình OLED
                 I2C_SSD1306_buffer_clear(ssd1306);
-                I2C_SSD1306_buffer_text_on(ssd1306, 0, 10, (const uint8_t*) text, false);
+                I2C_SSD1306_buffer_int_on(ssd1306, 0, 10, data, false);
             }
         }
     }

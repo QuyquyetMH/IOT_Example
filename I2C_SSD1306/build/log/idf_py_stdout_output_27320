@@ -1,0 +1,25 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D E:\ESP_idf\Example\I2C_SSD1306\build\bootloader\esp-idf\esptool_py && E:\ESP_idf\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 E:/ESP_idf/Example/I2C_SSD1306/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+E:/ESP_idf/Example/I2C_SSD1306/main/main.c: In function 'app_main':
+E:/ESP_idf/Example/I2C_SSD1306/main/main.c:177:59: warning: passing argument 4 of 'I2C_SSD1306_buffer_int_on' makes integer from pointer without a cast [-Wint-conversion]
+  177 |                 I2C_SSD1306_buffer_int_on(ssd1306, 0, 10, data, false);
+      |                                                           ^~~~
+      |                                                           |
+      |                                                           uint8_t * {aka unsigned char *}
+In file included from E:/ESP_idf/Example/I2C_SSD1306/main/main.c:3:
+E:/ESP_idf/Example/I2C_SSD1306/components/ssd1306/ssd1306.h:46:86: note: expected 'int' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   46 | void I2C_SSD1306_buffer_int_on(I2C_SSD1306_t* ssd1306, short int x, short int y, int number, bool invert);
+      |                                                                                  ~~~~^~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable I2C_SSD1306.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated E:/ESP_idf/Example/I2C_SSD1306/build/I2C_SSD1306.bin
+[7/7] cmd.exe /C "cd /D E:\ESP_idf\Example\I2C_SSD1306\build\esp-idf\esptool_py && E:\ESP_idf\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe E:/ESP_idf/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/ESP_idf/Example/I2C_SSD1306/build/partition_table/partition-table.bin E:/ESP_idf/Example/I2C_SSD1306/build/I2C_SSD1306.bin"
+I2C_SSD1306.bin binary size 0x38c70 bytes. Smallest app partition is 0x100000 bytes. 0xc7390 bytes (78%) free.
